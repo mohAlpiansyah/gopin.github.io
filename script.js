@@ -36,3 +36,42 @@ let changeText = ()=>{
 
 changeText();
 setInterval(changeText,3000)
+
+const circles = document.querySelectorAll('.circle');
+circles.forEach(elem=>{
+    var dots = elem.getAttribute("data-dots");
+    var marked = elem.getAttribute("data=percent");
+    var percent = Math.floor(dots*marked/100);
+    var points = "";
+    var rotate = 360 / dots;
+
+    for(let i = 0 ; i < dots ; i++){
+        points += `<div class="points" style="--i:${i}; --rot:${rotate}deg"></div>`;
+    }
+    elem.innerHTML = points;
+    
+})
+
+var mixer = mixitup('.portofolio-gallery');
+
+
+// sticky menu
+const header = document.querySelector("header");
+window.addEventListener("scroll",function(){
+    header.classList.toggle("sticky",window.scrollY > 50)
+})
+
+
+// toogle
+let menuIcons = document.querySelector("#menu-icons");
+let list = document.querySelector(".list");
+
+menuIcons.onclick = ()=>{
+    menuIcons.classList.toggle("bx-x");
+    list.classList.toggle("open");
+}
+
+window.onscroll = ()=>{
+    menuIcons.classList.remove("bx-x");
+    list.classList.remove("open");
+}
