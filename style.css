@@ -798,8 +798,8 @@ footer a i{
     top:13%;
   } */
   .kotak-img{
-    width:630px;
-    height:630px;
+    width:350px;
+    height:3500px;
   }
   .about{
     flex-direction: column-reverse;
