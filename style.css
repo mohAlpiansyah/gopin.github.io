@@ -9,22 +9,22 @@
  }
 
  :root{
-    --text-color:#f5f5f5;
-    --hover-color:#12f7ff;
-    --bg-color:#250821;
-    --second-bg-color:#292e33;
+    --text-color:#000000;
+    --hover-color:#e40f00;
+    --bg-color:#ffffff;
+    --second-bg-color:#000000;
     --big-font:2.5rem;
     --norma-font:2rem;
-    --neon-box-shadow:0 0 .5rem #12f7ff;
+    --neon-box-shadow:0 0 .5rem #ee3e08;
     --h2-font:3rem;
-    --font-neon-text-shadow:0 0 10px rgba(18,247,255,0.3),
-    0 0 20px rgba(18,247,255,0.3),
-    0 0 30px rgba(18,247,255,0.3),
-    0 0 40px rgba(18,247,255,0.3),
-    0 0 70px rgba(18,247,255,0.3),
-    0 0 80px rgba(18,247,255,0.3),
-    0 0 100px rgba(18,247,255,0.3),
-    0 0 150px rgba(18,247,255,0.3);
+    --font-neon-text-shadow:0 0 10px rgba(255, 17, 0, 0.829),
+    0 0 20px rgba(255, 17, 0, 0.829),
+    0 0 30px rgba(255, 17, 0, 0.829),
+    0 0 40px rgba(255, 17, 0, 0.829),
+    0 0 70px rgba(255, 17, 0, 0.829),
+    0 0 80px rgba(255, 17, 0, 0.829),
+    0 0 100px rgba(255, 17, 0, 0.829),
+    0 0 150px rgba(255, 17, 0, 0.829);
  }
  ::-webkit-scrollbar{
     height:0;
@@ -78,14 +78,14 @@
  }
  .list a:hover{
     color:var(--hover-color);
-    text-shadow: 0 0 10px rgba(18,247,255,0.6),
-    0 0 20px rgba(18,247,255,0.6),
-    0 0 30px rgba(18,247,255,0.6),
-    0 0 40px rgba(18,247,255,0.6),
-    0 0 70px rgba(18,247,255,0.6),
-    0 0 80px rgba(18,247,255,0.6),
-    0 0 100px rgba(18,247,255,0.6),
-    0 0 150px rgba(18,247,255,0.6); 
+    text-shadow: 0 0 10px rgba(255, 17, 0, 0.829),
+    0 0 20px  rgba(255, 17, 0, 0.829),
+    0 0 30px  rgba(255, 17, 0, 0.829),
+    0 0 40px  rgba(255, 17, 0, 0.829),
+    0 0 70px  rgba(255, 17, 0, 0.829),
+    0 0 80px  rgba(255, 17, 0, 0.829),
+    0 0 100px  rgba(255, 17, 0, 0.829),
+    0 0 150px  rgba(255, 17, 0, 0.829); 
  }
  #menu-icons{
     font-size: 1.8rem;
@@ -193,16 +193,17 @@
  }
  .btn:hover{
    color:var(--bg-color);
-   background: #f5f5f5;
+   background: #000000;
  }
  .btn:nth-child(2){
-   background:#f5f5f5;
+   background:#000000;
    color:var(--bg-color);
 
  }
  .sosial-media{
    margin-top:8rem;
    display:flex;
+   align-items: center;
    justify-content:space-evenly;
    width:220px;
    height:45px;
@@ -217,18 +218,19 @@
    color:var(--hover-color);
    border:2px solid var(--hover-color);
    transition: .6s;
-   box-shadow: 0 0 0.3rem #12f7ff;
+   box-shadow: 0 0 0.3rem #ff1212;
    border-radius:5px;
    position:relative;
    z-index:1;
    overflow: hidden;
    text-decoration: none;
  }
+ 
  .sosial-media a i{
    font-size: 1.5rem;
  }
  .sosial-media a:hover{
-   color:#ffffff;
+   color:#000000;
  }
  .sosial-media a::before{
    content:" ";
@@ -260,7 +262,7 @@
    width:100%;
    height:100%;
    z-index: -1;
-   top:10px;
+   top:40px;
  }
  .kotak-img-about{
    position:absolute;
@@ -344,6 +346,10 @@
    left:61%;
    top:70%;
 }
+.btn-box .btn:hover{
+  background-color: #ffffff;
+  color:#000000;
+}
 
 
 
@@ -366,10 +372,8 @@
   text-transform: uppercase;
 } 
 .section-services{
-  display:flex;
   justify-content:center;
   align-items:center;
-  flex-wrap: wrap;
   grid-gap:2rem;
 }
 .section-services .services-box{
@@ -404,6 +408,7 @@
 .services-box h3{
   margin-top:10px;
   font-size:1.5rem;
+  color:#ffffff;
 }
 .services-box p{
   margin:.5rem 0 1.5rem 0;
@@ -416,6 +421,7 @@
 /* Skill */
 .skills{
   background: var(--second-bg-color);
+  color:#fff;
 }
 .skill-main{
   width:100%;
@@ -519,6 +525,7 @@
   animation-delay:calc(var(--i)*0.05s);
 }
 
+
 /* Portofolio */
 
 .fillter-buttons{
@@ -575,7 +582,7 @@
   width:100%;
   height:100%;
   opacity:0; 
-  background: linear-gradient(rgba(0,0,0,.2), #12f7ff);
+  background: linear-gradient(rgba(0,0,0,.2), #ff1212);
   display:flex;
   align-items:center;
   justify-content: center;
@@ -834,5 +841,10 @@ footer a i{
     }
     .img-about p{
       font-size: 1rem;
+    }
+    .services-box{
+      display:flex;
+      align-items: center;
+      flex-direction: column;
     }
 }
