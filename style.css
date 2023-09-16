@@ -129,7 +129,7 @@
  .change-text h3 .word{
     position:absolute;
     display:flex;
-    opacity:0;
+    opacity: 0;
  }
 
  .change-text h3 .word .letter{
