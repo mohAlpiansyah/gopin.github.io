@@ -158,6 +158,9 @@
    justify-content: space-between;
    margin:1rem 0 2rem;
  }
+ .instagram-info{
+   padding-right:39px;
+ }
  .info-box h5{
    font-weight: 600;
    color:var(--text-color);
@@ -173,6 +176,7 @@
    justify-content: space-between;
    width:320px;
    height:45px;
+   
  }
  .btn-box .btn{
    display:inline-flex;
@@ -260,10 +264,10 @@
    height:auto;
  }
  .kotak-img{
-   position:absolute;
+  position:absolute;
    width:100%;
    height:100%;
-   z-index: -1;
+    z-index:-1;
    top:40px;
  }
  .kotak-img-about{
@@ -497,6 +501,10 @@
   animation-delay:calc(var(--i)*0.05s);
 }
 
+.card i{
+  font-size:45px;
+  color: #e40f00;
+}
 
 /* Portofolio */
 
